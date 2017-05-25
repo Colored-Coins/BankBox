@@ -1,0 +1,81 @@
+doctype html
+html(lang='en')
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+
+		title ColoredCoins BankBox
+
+		script.
+			if (typeof module === 'object') {window.module = module; module = undefined;}
+		script(src='/js/jquery/dist/jquery.min.js', type='text/javascript')
+		script(src='/js/bootstrap/dist/js/bootstrap.min.js', type='text/javascript')
+		script(src='/js/build/bundle.js', type='text/javascript')
+		script.
+			var React = require('react')
+			var ReactDOM = require('react-dom')
+			var _ = require('lodash')
+		script(src='/js/socket.io-client/dist/socket.io.min.js', type='text/javascript')
+		script(src='/js/async/dist/async.min.js', type='text/javascript')
+		script(src='/js/moment/min/moment-with-locales.min.js', type='text/javascript')
+		script(src='/js/backbone/backbone-min.js', type='text/javascript')
+		script(src='/js/bootstrap-validator/dist/validator.min.js', type='text/javascript')
+		script(src='/js/timediff/timediff.js', type='text/javascript')
+		script(src='/js/coloredcoins-sdk/client/coloredcoins.client.js', type='text/javascript')
+		script(src='/js/src/router.js', type='text/javascript')
+		script(src='/js/src/preloader.js', type='text/javascript')
+		script(src='/js/src/global.js', type='text/javascript')
+		script(src='/js/src/uploader.min.js', type='text/javascript')
+		script(src='/js/src/defaultAssetTemplate.js', type='text/javascript')
+
+		script(src='/js/build/components/notifications.js', type='text/javascript')
+		script(src='/js/build/components/utils.js', type='text/javascript')
+		script(src='/js/build/components/dashboard.js', type='text/javascript')
+		script(src='/js/build/components/settings.js', type='text/javascript')
+		script(src='/js/build/components/assets.js', type='text/javascript')
+		script(src='/js/build/components/meta-editor.js', type='text/javascript')
+		script(src='/js/build/components/paginator.js', type='text/javascript')
+		script(src='/js/build/components/transactions.js', type='text/javascript')
+		script(src='/js/build/components/navigation.js', type='text/javascript')
+		script(src='/js/build/components/onboarding.js', type='text/javascript')
+		script.
+			if (window.module) module = window.module;
+
+		link(href='/css/normalize.css/normalize.css', rel='stylesheet')
+		link(href='/css/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href='/css/build/main.css', rel='stylesheet')
+
+		script.
+			var network = '#{network}';
+			var currency = network === 'testnet' ? 'tBTC' : 'BTC';
+			var fee = '#{fee}';
+			fee = parseInt(fee, 10)
+			var blockExplorerUIUrl = '#{blockExplorerUIUrl}'; // TODO: this is until we open-source the explorer-UI as well.
+			var dashboardUrl = '#{dashboardUrl}';
+			var dashboardVersion = '#{dashboardVersion}';
+			var fullNodeUrl = '#{fullNodeUrl}'
+	body
+		#splash.text-l
+			h1.title-l.splash ColoredCoins BankBox
+			| Loading
+			#preloader(style="width: 76px; height: 76px; margin: 20px auto;")
+		#errorScreen.text-center
+			h1.title-l.splash Error
+			p#errorMsg(style="width: 500px; margin: 0 auto; margin-bottom: 20px;") Something Happened
+			#errorActions
+			a.btn.btn-primary.primary(href='/login', style="margin-right: 20px;") Return to Home
+			button.btn.btn-primary.primary(onClick='$("#errorScreen").hide();', style="width: 200px") Dismiss
+		#appContainer
+		script.
+			if (window && window.process && window.process.type) {
+				var shell = require('electron').shell
+				console.log('shell', shell)
+				$(document).on('click', 'a[href^="http"]', function(event) {
+					event.preventDefault();
+					shell.openExternal(this.href);
+				});
+			}
+			$(document).ready(function() {
+				var loader = new Preloader();
+				$.getScript("/js/build/components/app.js")
+			});

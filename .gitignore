@@ -1,0 +1,7 @@
+node_modules/
+app/public/js/build/
+app/public/css/build/
+dist/
+dependencies/
+bin/win32.iss
+bin/win64.iss

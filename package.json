@@ -1,0 +1,63 @@
+{
+  "name": "BankBox",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "ColoredCoins desktop wallet application for digital currency issuance and management",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "prepublish": "npm run build",
+    "build": "npm run babel && npm run browserify && npm run less",
+    "babel": "babel --presets react,es2015-without-strict app/public/js/src/components --out-dir app/public/js/build/components",
+    "browserify": "browserify -r react -r react-dom -r lodash | uglifyjs > app/public/js/build/bundle.js",
+    "less": "lessc app/public/css/src/main.less app/public/css/build/main.css",
+    "watch": "nodemon --exec \"npm run start\" --ext js,less,css,jade --ignore build/ --ignore dist/",
+    "package": "node ./bin/package.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Colored-Coins/BankBox"
+  },
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "async": "^2.3.0",
+    "backbone": "^1.3.3",
+    "bootstrap": "^3.3.7",
+    "bootstrap-validator": "^0.11.9",
+    "casimircore": "^0.11.3",
+    "coloredcoins-full-node": "^0.1.1",
+    "coloredcoins-sdk": "git+https://github.com/Colored-Coins/colored-coins-sdk.git#adapt-to-full-node",
+    "download": "^6.0.0",
+    "electron-context-menu": "^0.8.0",
+    "iniparser": "^1.0.5",
+    "jade": "^1.11.0",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "normalize.css": "^6.0.0",
+    "ospath": "^1.2.2",
+    "qrcode": "0.8.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "socket.io-client": "^1.7.3",
+    "timediff": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015-without-strict": "0.0.4",
+    "babel-preset-react": "^6.23.0",
+    "browserify": "^14.3.0",
+    "cross-zip": "^2.1.5",
+    "dedent": "^0.7.0",
+    "electron": "1.6.6",
+    "electron-inspector": "^0.1.4",
+    "electron-packager": "^8.7.0",
+    "electron-rebuild": "^1.5.7",
+    "electron-winstaller": "^2.5.2",
+    "innosetup-compiler": "^5.5.9",
+    "less": "^2.7.2",
+    "minimist": "^1.2.0",
+    "nodemon": "^1.11.0",
+    "uglify-js": "^3.0.11"
+  }
+}

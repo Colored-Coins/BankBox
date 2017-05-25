@@ -1,0 +1,23 @@
+{
+  "/": {
+    "function_name": "dashboard.index",
+    "params": []
+  },
+  "/login": {
+    "function_name": "dashboard.login",
+    "params": []
+  },
+  "/load": {
+    "function_name": "dashboard.load",
+    "params": []
+  },
+	"/is_running": {
+		"function_name": "dashboard.isRunning",
+		"params": []
+	},
+  "/generateQR": {
+    "function_name": "dashboard.generateQR",
+    "params": ["address"],
+    "optional": ["src"]
+  }
+}
