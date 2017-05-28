@@ -22,6 +22,8 @@ It downloads and maintains a copy of the blockchain **locally**, coupled with pa
 **Note:** A ColoredCoins transaction, just as any other Bitcoin transaction, require some Bitcoins to be transferred with it.
 Since the BankBox gives full control to the user, it's up to the BankBox client to finance the ColoredCoins transactions.
 
+If you would like to deep dive to our programmatic Node.js (and browser) API for issuance and transfer of digital assets, go to [Getting started with ColoredCoins SDK](https://github.com/Colored-Coins/ColoredCoins-docs/blob/master/getting_started.md).
+
 <p>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="http://coloredcoins.org/img/bankbox-architecture-vertical.svg" height="750">
 </p>
