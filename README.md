@@ -15,6 +15,23 @@
   <a href="http://slack.coloredcoins.org"><img src="http://slack.coloredcoins.org/badge.svg" alt="slack"></a>
 </p>
 
+**BankBox** is a desktop client of the [ColoredCoins protocol](https://github.com/Colored-Coins/Colored-Coins-Protocol-Specification) on top of the Bitcoin blockchain.<br>
+It utilizes [ColoredCoins full-node](https://github.com/Colored-Coins/Full-Node), which in its turn is dependant on [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core/), the Bitcoin reference client.<br>
+It downloads and maintains a copy of the blockchain **locally**, coupled with parsed ColoredCoins assets layer of ColoredCoins colored transactions - so it keeps the protocol true **peer-to-peer** with no dependance on external servers.
+
+<p align="center">
+  <img src="http://coloredcoins.org/img/bankbox-architecture-vertical.svg" height="750" align="center">
+</p>
+
+## Install
+
+Download the latest version of BankBox from the
+[GitHub releases](https://github.com/Colored-Coins/BankBox/releases) page.
+
+You can also try out the current (unstable) development version by cloning the Git repository.
+See the instructions below in the ["How to Contribute"](#how-to-contribute) section.
+
+
 ## Screenshots
 
 <p align="center">
