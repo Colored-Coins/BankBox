@@ -19,8 +19,8 @@
 It utilizes [ColoredCoins full-node](https://github.com/Colored-Coins/Full-Node), which in its turn is dependant on [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core/), the Bitcoin reference client.<br>
 It downloads and maintains a copy of the blockchain **locally**, coupled with parsed ColoredCoins assets layer of ColoredCoins colored transactions - so it keeps the protocol true **peer-to-peer** with no dependance on external servers.
 
-<p align="center">
-  <img src="http://coloredcoins.org/img/bankbox-architecture-vertical.svg" height="750" align="center">
+<p>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="http://coloredcoins.org/img/bankbox-architecture-vertical.svg" height="750">
 </p>
 
 ## Install
