@@ -22,8 +22,10 @@ function tryStartColoredCoinsFullNode () {
 }
 
 module.exports = {
-  init: function (cb) {
-    tryStartColoredCoinsFullNode()
+  init: function (properties, cb) {
+    if (properties.fullNodeAutoRun) {
+      tryStartColoredCoinsFullNode()
+    }
     server.http_server.listen(server.port, function (err) {
       if (err) return cb(err)
       console.log('Server started on port', server.port)

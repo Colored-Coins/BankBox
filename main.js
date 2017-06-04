@@ -10,7 +10,7 @@ const path = require('path')
 let mainWindow
 
 function createWindow () {
-  server.init(err => {
+  server.init(properties, err => {
     if (err) return console.error('Critical error so killing app. Error =', err)
     // Create the browser window.
     const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize

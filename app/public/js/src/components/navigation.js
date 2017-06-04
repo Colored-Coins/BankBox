@@ -49,7 +49,7 @@ var Navigation = React.createClass({
 			<div id="leftNav" className={this.state.open ? 'open' : 'closed'}>
 				{content}
 				<div id='leftNavFooter'>
-					<div style={{marginBottom: '8px'}}>
+					<div style={{marginBottom: '4px'}}>
 						<span id='leftNavFooterBrand'>ColoredCoins</span>
 						<img id='leftNavFooterLogo' src='/img/icons/png/logo16x16.png'/>
 						{footerNetwork}

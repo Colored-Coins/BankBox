@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
     <a href="http://coloredcoins.org">
-      <img src="http://coloredcoins.org/img/logo.svg" alt="ColoredCoins" width=200>
+      <img src="http://coloredcoins.org/img/logo-new.svg" alt="ColoredCoins" width=200>
     </a>
   <br>
   BankBox

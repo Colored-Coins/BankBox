@@ -13,11 +13,19 @@ properties.engine.view_folder = path.join(__dirname, properties.engine.view_fold
 properties.engine.static_folder = path.join(__dirname, properties.engine.static_folder)
 
 // full node properties
-var fullNodePropertiesFilePath = path.join(ospath.data(), 'coloredcoins-full-node', 'properties.conf')
-if (!fs.existsSync(fullNodePropertiesFilePath)) {
-  fullNodePropertiesFilePath = path.join(__dirname, 'node_modules/coloredcoins-full-node/properties.conf')
+properties.fullNodeAutoRun = typeof properties.fullNodeAutoRun === 'undefined' || properties.fullNodeAutoRun === 'true'
+if (!properties.fullNodeAutoRun) {
+  if (!properties.fullNodeRemoteUrl) {
+    throw new Error('Must have "fullNodeRemoteUrl" if "fullNodeAutoRun" is false')
+  }
+} else {
+  // full-node should be run and hosted locally
+  var fullNodePropertiesFilePath = path.join(ospath.data(), 'coloredcoins-full-node', 'properties.conf')
+  if (!fs.existsSync(fullNodePropertiesFilePath)) {
+    fullNodePropertiesFilePath = path.join(__dirname, 'node_modules/coloredcoins-full-node/properties.conf')
+  }
+  properties.fullNode = ini.parseSync(fullNodePropertiesFilePath)
 }
-properties.fullNode = ini.parseSync(fullNodePropertiesFilePath)
 
 var logSettings = {
   env: properties.ENV.type,

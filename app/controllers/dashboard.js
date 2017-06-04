@@ -3,6 +3,9 @@ var properties = casimir.properties
 var QRCode = require('qrcode')
 
 function getFullNodeUrl () {
+  if (!properties.fullNodeAutoRun && properties.fullNodeRemoteUrl) {
+    return properties.fullNodeRemoteUrl
+  }
   var fullNodeServerProperties = properties.fullNode.server
   var host = 'localhost'
   var protocol
