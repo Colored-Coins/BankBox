@@ -28,13 +28,22 @@ If you would like to deep dive to our programmatic Node.js (and browser) API for
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="http://coloredcoins.org/img/bankbox-architecture-vertical.svg" height="750">
 </p>
 
+## Prerequisites
+
+BankBox has dependencies on [ColoredCoins full-node](https://github.com/Colored-Coins/Full-Node), which in its turn is dependant on [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core/) and [Redis](https://redis.io/).<br>
+Windows installer will download all of those for you, other operating systems will require to download them independently.
+
+
 ## Install
 
-Download the latest version of BankBox from the
-[GitHub releases](https://github.com/Colored-Coins/BankBox/releases) page.
+<b>Download the latest version of BankBox from the
+[GitHub releases](https://github.com/Colored-Coins/BankBox/releases) page. </b>
 
-You can also try out the current (unstable) development version by cloning the Git repository.
-See the instructions below in the ["How to Contribute"](#how-to-contribute) section.
+The installer only availible currently for Windows machines to run the Bankbox on a Linux/Mac please follow the  ["Prerequisites"](#Prerequisites) section and run from source:
+- Install dependencies mentioned above
+- Download or git clone the repository
+- npm install
+- npm start
 
 
 ## Screenshots
@@ -45,10 +54,7 @@ See the instructions below in the ["How to Contribute"](#how-to-contribute) sect
   <img src="http://coloredcoins.org/img/bankbox-screenshot-transaction.JPG" alt="screenshot" height="750" align="center">
 </p>
 
-## Dependencies
 
-BankBox has dependencies on [ColoredCoins full-node](https://github.com/Colored-Coins/Full-Node), which in its turn is dependant on [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core/) and [Redis](https://redis.io/).<br>
-Windows installer will download all of those for you, other operating systems will require to download them independently.
 
 ## Configuration
 
@@ -58,7 +64,7 @@ BankBox `properties.conf` can be found and edited in: <br>
 ColoredCoins full-node `properties.conf`: <br>
 `%APPDATA%\coloredcoins-full-node` (windows)
 
-## How to Contribute
+
 
 ### Get the code
 
