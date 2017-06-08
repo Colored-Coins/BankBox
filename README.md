@@ -25,26 +25,25 @@ Since the BankBox gives full control to the user, it's up to the BankBox client 
 If you would like to deep dive to our programmatic Node.js (and browser) API for issuance and transfer of digital assets, go to [Getting started with ColoredCoins SDK](https://github.com/Colored-Coins/ColoredCoins-docs/blob/master/getting_started.md).
 
 <p>
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="http://coloredcoins.org/img/bankbox-architecture-vertical.svg" height="750">
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="http://coloredcoins.org/img/bankbox-architecture-vertical.svg?id=1" height="750">
 </p>
 
 ## Prerequisites
 
-BankBox has dependencies on [ColoredCoins full-node](https://github.com/Colored-Coins/Full-Node), which in its turn is dependant on [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core/) and [Redis](https://redis.io/).<br>
-Windows installer will download all of those for you, other operating systems will require to download them independently.
+* [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core/)
+* [Redis](https://redis.io/)<br>
 
+Windows installer will download these dependencies for you, but for other OS they should be installed separately.
 
 ## Install
 
 <b>Download the latest version of BankBox from the
-[GitHub releases](https://github.com/Colored-Coins/BankBox/releases) page. </b>
+[GitHub releases](https://github.com/Colored-Coins/BankBox/releases) page </b> (currently available for windows)
 
-The installer only availible currently for Windows machines to run the Bankbox on a Linux/Mac please follow the  ["Prerequisites"](#Prerequisites) section and run from source:
-- Install dependencies mentioned above
-- Download or git clone the repository
-- npm install
-- npm start
+### OR
 
+You can run from source.<br>
+First you need to download the prerequisites mentioned above, and then use the instructions in the ["How to Contribute"](#how-to-contribute) section.
 
 ## Screenshots
 
@@ -54,8 +53,6 @@ The installer only availible currently for Windows machines to run the Bankbox o
   <img src="http://coloredcoins.org/img/bankbox-screenshot-transaction.JPG" alt="screenshot" height="750" align="center">
 </p>
 
-
-
 ## Configuration
 
 BankBox comes with default properties - such as the Bitcoin network (mainnet or testnet), default transaction fee and the configuration for the ColoredCoins full-node server, Bitcoin-Core daemon and Redis. <br>
@@ -64,7 +61,7 @@ BankBox `properties.conf` can be found and edited in: <br>
 ColoredCoins full-node `properties.conf`: <br>
 `%APPDATA%\coloredcoins-full-node` (windows)
 
-
+## How to Contribute
 
 ### Get the code
 
