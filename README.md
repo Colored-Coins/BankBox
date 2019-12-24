@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-      <img src="https://raw.github.com/oleiba/BankBox/fix-links/assets/logo.png" alt="ColoredCoins" height=100>
+      <img src="https://raw.github.com/oleiba/BankBox/master/assets/logo.png" alt="ColoredCoins" height=100>
   <br>
   BankBox
   <br>
@@ -16,12 +16,12 @@ It downloads and maintains a copy of the blockchain **locally**, coupled with pa
 **Note:** A ColoredCoins transaction, just as any other Bitcoin transaction, require some Bitcoins to be transferred with it.
 Since the BankBox gives full control to the user, it's up to the BankBox client to finance the ColoredCoins transactions.
 
-If you would like to deep dive to our programmatic Node.js (and browser) API for issuance and transfer of digital assets, go to [Getting started with ColoredCoins SDK](https://github.com/Colored-Coins/ColoredCoins-docs/blob/fix-links/getting_started.md).
+If you would like to deep dive to our programmatic Node.js (and browser) API for issuance and transfer of digital assets, go to [Getting started with ColoredCoins SDK](https://github.com/Colored-Coins/ColoredCoins-docs/blob/master/getting_started.md).
 
 The architecture of this desktop wallet can be illustrated with the following layers sketch:
 
 <p align="center">
-    <img src="https://raw.github.com/oleiba/BankBox/fix-links/assets/architecture.png">
+    <img src="https://raw.github.com/oleiba/BankBox/master/assets/architecture.png">
 </p>
 
 ## Prerequisites
@@ -44,10 +44,10 @@ First you need to download the prerequisites mentioned above, and then use the i
 ## Screenshots
 
 <p align="center">
-  <img src="https://raw.github.com/oleiba/BankBox/fix-links/assets/screenshot-dashboard.jpg" alt="screenshot-dashboard" height="500">
+  <img src="https://raw.github.com/oleiba/BankBox/master/assets/screenshot-dashboard.jpg" alt="screenshot-dashboard" height="500">
 </p>
 <p align="center">
-  <img src="https://raw.github.com/oleiba/BankBox/fix-links/assets/screenshot-transaction.jpg" alt="screenshot-transaction" height="500">
+  <img src="https://raw.github.com/oleiba/BankBox/master/assets/screenshot-transaction.jpg" alt="screenshot-transaction" height="500">
 </p>
 
 ## Configuration
