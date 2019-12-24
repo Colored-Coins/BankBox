@@ -19,7 +19,7 @@ Since the BankBox gives full control to the user, it's up to the BankBox client 
 If you would like to deep dive to our programmatic Node.js (and browser) API for issuance and transfer of digital assets, go to [Getting started with ColoredCoins SDK](https://github.com/Colored-Coins/ColoredCoins-docs/blob/fix-links/getting_started.md).
 
 <p>
-    <img src="https://raw.github.com/oleiba/BankBox/fix-links/assets/architecture.svg">
+    <img src="https://raw.github.com/oleiba/BankBox/fix-links/assets/architecture.png">
 </p>
 
 ## Prerequisites
