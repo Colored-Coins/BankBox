@@ -1,8 +1,6 @@
 <h1 align="center">
   <br>
-    <a href="http://coloredcoins.org">
-      <img src="http://coloredcoins.org/img/logo-new.svg" alt="ColoredCoins" width=200>
-    </a>
+      <img src="https://raw.github.com/oleiba/BankBox/master/assets/logo.png" alt="ColoredCoins" height=100>
   <br>
   BankBox
   <br>
@@ -10,10 +8,6 @@
 </h1>
 
 <h4 align="center">ColoredCoins desktop wallet application for digital currency issuance and management.</h4>
-
-<p align="center">
-  <a href="http://slack.coloredcoins.org"><img src="http://slack.coloredcoins.org/badge.svg" alt="slack"></a>
-</p>
 
 **BankBox** is a desktop client of the [ColoredCoins protocol](https://github.com/Colored-Coins/Colored-Coins-Protocol-Specification) on top of the Bitcoin blockchain.<br>
 It utilizes [ColoredCoins full-node](https://github.com/Colored-Coins/Full-Node), which in its turn is dependant on [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core/), the Bitcoin reference client.<br>
@@ -24,8 +18,10 @@ Since the BankBox gives full control to the user, it's up to the BankBox client 
 
 If you would like to deep dive to our programmatic Node.js (and browser) API for issuance and transfer of digital assets, go to [Getting started with ColoredCoins SDK](https://github.com/Colored-Coins/ColoredCoins-docs/blob/master/getting_started.md).
 
-<p>
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="http://coloredcoins.org/img/bankbox-architecture-vertical.svg?id=1" height="750">
+The architecture of this desktop wallet can be illustrated with the following layers sketch:
+
+<p align="center">
+    <img src="https://raw.github.com/oleiba/BankBox/master/assets/architecture.png">
 </p>
 
 ## Prerequisites
@@ -48,9 +44,10 @@ First you need to download the prerequisites mentioned above, and then use the i
 ## Screenshots
 
 <p align="center">
-  <img src="http://coloredcoins.org/img/bankbox-screenshot-dashboard.JPG" alt="screenshot" height="750" align="center">
-  <div style="margin-bottom: 16px;"/>
-  <img src="http://coloredcoins.org/img/bankbox-screenshot-transaction.JPG" alt="screenshot" height="750" align="center">
+  <img src="https://raw.github.com/oleiba/BankBox/master/assets/screenshot-dashboard.jpg" alt="screenshot-dashboard" height="500">
+</p>
+<p align="center">
+  <img src="https://raw.github.com/oleiba/BankBox/master/assets/screenshot-transaction.jpg" alt="screenshot-transaction" height="500">
 </p>
 
 ## Configuration
@@ -100,10 +97,6 @@ For `[options]` the following optional arguments are available:
   - `exe` - Windows installer
   - `portable` - Windows portable app
   - `all` - All available package options
-
-## Support
-
-You can find support at our [Slack channel](http://slack.coloredcoins.org), or e-mail us to contact@coloredcoins.org.
 
 ## License
 
